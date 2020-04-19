@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Dashboard">
+
+    <ScrollView
+        android:id="@+id/sv_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/bottom"
+        android:layout_alignParentTop="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingHorizontal="10dp"
+            android:paddingTop="40dp"
+            android:paddingBottom="20dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="ITC CAFE CORONA"
+                android:textColor="#A31558"
+                android:textSize="15sp"
+                app:fontFamily="@font/bangers" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="10dp"
+                android:background="@drawable/bg"
+                android:padding="10dp">
+
+                <ImageView
+                    android:id="@+id/warung"
+                    android:layout_width="170dp"
+                    android:layout_height="200dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/gambar" />
+
+                <TextView
+                    android:id="@+id/textwarung"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_toRightOf="@id/warung"
+                    android:fontFamily="@font/bangers"
+                    android:text="Warung Makan Sederhana "
+                    android:textColor="#fff" />
+
+                <TextView
+                    android:id="@+id/textmakanan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/textwarung"
+                    android:layout_toRightOf="@id/warung"
+                    android:paddingHorizontal="10dp"
+                    android:paddingVertical="5dp"
+                    android:text="Warung Enak menyajikan makanan tradisional dari ayam khas Bali. Makanan utamanya adalah nasi campur Bali. Lalu ada ayam betutu, ayam panggang, grangasem ayam kampung, pepes ayam, telor ceriwis dan sambel mentah."
+                    android:textColor="#fff"
+                    android:textSize="11dp" />
+
+                <TextView
+                    android:id="@+id/textharga1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/textmakanan"
+                    android:layout_toRightOf="@id/warung"
+                    android:paddingHorizontal="10dp"
+                    android:paddingVertical="5dp"
+                    android:text="Rp.10000"
+                    android:textColor="#fff"
+                    android:textSize="11dp" />
+
+                <Button
+                    android:id="@+id/tambahmakan"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="170dp"
+                    android:layout_marginRight="2dp"
+                    android:background="@drawable/bot"
+                    android:text="+" />
+
+                <TextView
+                    android:id="@+id/textplus"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="175dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_toLeftOf="@id/tambahmakan"
+                    android:text="0"
+                    android:textSize="15sp" />
+
+                <Button
+                    android:id="@+id/kurangmakanan"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="170dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_toLeftOf="@id/textplus"
+                    android:background="@drawable/bot"
+                    android:text="-" />
+
+
+            </RelativeLayout>
+            <!-- warung makan 1-->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="10dp"
+                android:background="@drawable/bg"
+                android:padding="10dp">
+
+                <ImageView
+                    android:id="@+id/warung1"
+                    android:layout_width="170dp"
+                    android:layout_height="200dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/gambar2" />
+
+                <TextView
+                    android:id="@+id/textwarung1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_toRightOf="@id/warung1"
+                    android:fontFamily="@font/bangers"
+                    android:text="Warung ARAB  "
+                    android:textColor="#fff" />
+
+                <TextView
+                    android:id="@+id/textmakanan1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/textwarung1"
+                    android:layout_toRightOf="@id/warung1"
+                    android:paddingHorizontal="10dp"
+                    android:paddingVertical="5dp"
+                    android:text="Nasi Kabsa bisa dibilang adalah makanan nomor satu di Saudi Arabia, walaupun secara sejarah berasal dari Yaman tapi sudah menjadi makanan nasional di Arab Saudi. Nasi Kabsa biasanya menggunakan Daging Kambing atau Ayam"
+                    android:textColor="#fff"
+                    android:textSize="11dp" />
+
+                <TextView
+                    android:id="@+id/textharga2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/textmakanan1"
+                    android:layout_toRightOf="@id/warung1"
+                    android:paddingHorizontal="10dp"
+                    android:paddingVertical="2dp"
+                    android:text="Rp.50000"
+                    android:textColor="#fff"
+                    android:textSize="11dp" />
+
+                <Button
+                    android:id="@+id/tambahmakan1"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="170dp"
+                    android:layout_marginRight="5dp"
+                    android:background="@drawable/bot"
+                    android:text="+" />
+
+                <TextView
+                    android:id="@+id/textplus1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="175dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_toLeftOf="@id/tambahmakan1"
+                    android:text="0"
+                    android:textSize="15sp" />
+
+                <Button
+                    android:id="@+id/kurangmakanan1"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="170dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_toLeftOf="@id/textplus1"
+                    android:background="@drawable/bot"
+                    android:text="-" />
+
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/bg"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/btn_buy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:paddingLeft="10dp"
+                android:paddingBottom="4dp"
+                android:text="Rp.0"
+                android:textColor="#fff"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/btn_reset"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:paddingRight="10dp"
+                android:paddingBottom="4dp"
+                android:text="Bayar"
+                android:textColor="#fff"
+                android:textSize="18sp" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/beli"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/bot"
+                android:gravity="center"
+                android:text="Buy" />
+
+            <Button
+                android:id="@+id/reset"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/bot"
+                android:gravity="center"
+                android:text="Reset" />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>
